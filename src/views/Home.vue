@@ -4,7 +4,7 @@
     <div class="container">
       <hero />
 
-      <div class="row mt-5">
+      <div class="row mt-5 mb-3">
         <div class="col">
           <h2>Our <strong>Best</strong> Foods</h2>
         </div>
@@ -17,7 +17,7 @@
 
       <div class="row mb-5">
         <div
-          class="col md-4 mt-4"
+          class="col-md-4 mt-4"
           v-for="product in products"
           :key="product.id"
         >

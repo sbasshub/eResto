@@ -2,6 +2,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .router-link-exact-active {
     font-weight: bold;
 }
@@ -24,8 +28,23 @@
 }
 
 .fotter {
-    background-color: rgba(29, 29, 29, 0.733);
+    background-color: rgba(100, 100, 100, 0.513);
     color: aliceblue;
-    border-top-right-radius: 13px;
-    border-top-left-radius: 13px;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
 }
+
+/* .col {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    width: 25%;
+} */

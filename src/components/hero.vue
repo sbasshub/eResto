@@ -11,9 +11,9 @@
                 in your eResto
               </h2>
               <p>Come on, choose your favorite food now</p>
-              <button class="btn btn-lg btn-success">
+              <router-link class="btn btn-lg btn-success" to="/foods">
                 <b-icon-arrow-down></b-icon-arrow-down> Order now
-              </button>
+              </router-link>
               <!-- <router-link class="btn btn-lg btn-success">Order now</router-link> -->
             </div>
           </div>

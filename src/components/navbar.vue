@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
-      <a class="navbar-brand" href="#">eResto</a>
+      <a class="navbar-brand" href="/">eResto</a>
       <button
         class="navbar-toggler"
         type="button"

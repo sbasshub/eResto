@@ -13,3 +13,19 @@
 .badge-success {
     background-color: #4eb883;
 }
+
+.card-product {
+    border-radius: 17px;
+}
+
+.card-img-top {
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+}
+
+.fotter {
+    background-color: rgba(29, 29, 29, 0.733);
+    color: aliceblue;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}

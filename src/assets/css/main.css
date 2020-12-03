@@ -34,6 +34,20 @@
     border-top-left-radius: 9px;
 }
 
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item.active {
+    font-weight: bold;
+    color: black;
+}
+
+.img-fluid {
+    border-radius: 15px;
+}
+
 /* .col {
     display: flex;
     flex-direction: row;

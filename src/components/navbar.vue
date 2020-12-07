@@ -26,10 +26,10 @@
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <router-link class="nav-link" to="/keranjang">
+            <router-link class="nav-link" to="/bucket">
             Buckets
             <b-icon-bag></b-icon-bag>
-            <span class="badge badge-success ml-2">{{ orderan_quantity.length }}</span>
+            <span class="badge badge-success ml-2">{{ updateBucket ? updateBucket.length : orderan_quantity.length }}</span>
             </router-link>
           </li>
         </ul>
@@ -48,6 +48,7 @@ export default {
       orderan_quantity: []
     }
   },
+  props: ['updateBucket'],
   methods: {
     setQuantity(data) {
       this.orderan_quantity = data

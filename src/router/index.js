@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import foods from '../views/foods.vue'
 import foodDetails from '../views/foodDetails.vue'
 import bucket from '../views/bucket.vue'
+import succesOrder from '../views/succesOrder.vue'
 
 Vue.use(VueRouter)
 
@@ -26,6 +27,11 @@ const routes = [{
     path: '/bucket',
     name: 'bucket',
     component: bucket
+  },
+  {
+    path: '/succesOrder',
+    name: 'succesOrder',
+    component: succesOrder
   },
   {
     path: '/about',

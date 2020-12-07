@@ -1,5 +1,39 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light ">
+  <div>
+    <b-navbar toggleable="lg" type="light">
+      <div class="container">
+         <a class="navbar-brand" href="/">eResto</a>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+            <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/foods">Foods</router-link>
+          </li>
+          </b-navbar-nav>
+
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="ml-auto">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/bucket">
+                Buckets
+                <b-icon-bag></b-icon-bag>
+                <span class="badge badge-success ml-2">{{
+                  updateBucket ? updateBucket.length : orderan_quantity.length
+                }}</span>
+              </router-link>
+            </li>
+          </b-navbar-nav>
+        </b-collapse>
+      </div>
+    </b-navbar>
+  </div>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
       <a class="navbar-brand" href="/">eResto</a>
       <button
@@ -35,7 +69,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 </template>
 
 <script>
@@ -45,14 +79,14 @@ export default {
   name: "navbar",
   data() {
     return {
-      orderan_quantity: []
-    }
+      orderan_quantity: [],
+    };
   },
-  props: ['updateBucket'],
+  props: ["updateBucket"],
   methods: {
     setQuantity(data) {
-      this.orderan_quantity = data
-    }
+      this.orderan_quantity = data;
+    },
   },
   mounted() {
     axios

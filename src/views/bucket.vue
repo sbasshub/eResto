@@ -82,6 +82,34 @@
           </div>
         </div>
       </div>
+
+      <!-- Form checkout -->
+      <div class="row justify-content-end">
+        <div class="col-md-4">
+          <form class="mt-3" v-on:submit.prevent>
+            <div class="form-group">
+              <label for="name"> Name: </label>
+              <input type="text" class="form-control" v-model="order.name" />
+            </div>
+            <div class="form-group">
+              <label for="tableNum"> Table number: </label>
+              <input
+                type="number"
+                class="form-control"
+                v-model="order.tableNum"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-success float-right"
+              @click="checkout"
+            >
+              <b-icon-cart></b-icon-cart> Checkout
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -98,6 +126,7 @@ export default {
   data() {
     return {
       buckets: [],
+      order: {},
     };
   },
   methods: {
@@ -115,7 +144,6 @@ export default {
             dismissible: true,
           });
 
-
           //update reload
           axios
             .get("http://localhost:3000/bucket")
@@ -123,6 +151,38 @@ export default {
             .catch((error) => console.log(error));
         })
         .catch((error) => console.log(error));
+    },
+    checkout() {
+      if (this.order.name && this.order.tableNum) {
+        this.order.buckets = this.buckets;
+        axios
+          .post("http://localhost:3000/orderan", this.order)
+          .then(() => {
+
+            // delete all bucket
+            this.buckets.map(function (item) {
+              return axios
+                .delete("http://localhost:3000/bucket/" + item.id)
+                .catch((error) => console.log(error))
+            });
+
+            this.$router.push({ path: "/succesOrder" });
+            this.$toast.success("Checkout Complete ✔", {
+              type: "success",
+              position: "top-right",
+              duration: 3000,
+              dismissible: true,
+            });
+          })
+          .catch((err) => console.log(err));
+      } else {
+        this.$toast.error("Please insert ur name & table 📛", {
+          type: "error",
+          position: "top-right",
+          duration: 3000,
+          dismissible: true,
+        });
+      }
     },
   },
   mounted() {

@@ -29,7 +29,7 @@
             <router-link class="nav-link" to="/keranjang">
             Buckets
             <b-icon-bag></b-icon-bag>
-            <span class="badge badge-success ml-2">0</span>
+            <span class="badge badge-success ml-2">{{ orderan_quantity.length }}</span>
             </router-link>
           </li>
         </ul>
@@ -39,8 +39,26 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "navbar",
+  data() {
+    return {
+      orderan_quantity: []
+    }
+  },
+  methods: {
+    setQuantity(data) {
+      this.orderan_quantity = data
+    }
+  },
+  mounted() {
+    axios
+      .get("http://localhost:3000/bucket")
+      .then((response) => this.setQuantity(response.data))
+      .catch((error) => console.log(error));
+  },
 };
 </script>
 

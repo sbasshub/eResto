@@ -37,7 +37,8 @@
                 <strong>Delicious Food Menu, </strong><br />
                 in your eResto
               </h2>
-              <p>Come on, choose your favorite food now</p> <br>
+              <p>Come on, choose your favorite food now</p>
+              <br />
               <button class="btn btn-lg btn-success">
                 <b-icon-arrow-down></b-icon-arrow-down> Order now
               </button>

@@ -1,0 +1,247 @@
+{
+  "best-product": [
+    {
+      "id": 1,
+      "code": "k-01",
+      "nama": "Sate Ayam",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "sate-ayam.jpg"
+    },
+    {
+      "id": 2,
+      "code": "k-02",
+      "nama": "Nasi goreng telur",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "nasi-goreng-telor.jpg"
+    },
+    {
+      "id": 3,
+      "code": "k-03",
+      "nama": "Nasi remes",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "nasi-rames.jpg"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "code": "k-01",
+      "nama": "Sate Ayam",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "sate-ayam.jpg"
+    },
+    {
+      "id": 2,
+      "code": "k-02",
+      "nama": "Nasi goreng telur",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "nasi-goreng-telor.jpg"
+    },
+    {
+      "id": 3,
+      "code": "k-03",
+      "nama": "Nasi rames",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "nasi-rames.jpg"
+    },
+    {
+      "id": 4,
+      "code": "k-04",
+      "nama": "Lontong opor ayam",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "lontong-opor-ayam.jpg"
+    },
+    {
+      "id": 5,
+      "code": "k-05",
+      "nama": "Bakso",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "bakso.jpg"
+    },
+    {
+      "id": 6,
+      "code": "k-06",
+      "nama": "Nasi ayam geprek",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "nasi-ayam-geprek.jpg"
+    },
+    {
+      "id": 7,
+      "code": "k-07",
+      "nama": "Kentang goreng",
+      "harga": 10000,
+      "is_ready": true,
+      "gambar": "kentang-goreng.jpg"
+    },
+    {
+      "id": 8,
+      "code": "k-08",
+      "nama": "Mie ayam bakso",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "mie-ayam-bakso.jpg"
+    },
+    {
+      "id": 9,
+      "code": "k-09",
+      "nama": "Pangsit",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "pangsit.jpg"
+    },
+    {
+      "id": 10,
+      "code": "k-10",
+      "nama": "Mie goreng",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "mie-goreng.jpg"
+    }
+  ],
+  "bucket": [
+    {
+      "quantity_order": "1",
+      "products": {
+        "id": 7,
+        "code": "k-07",
+        "nama": "Kentang goreng",
+        "harga": 10000,
+        "is_ready": true,
+        "gambar": "kentang-goreng.jpg"
+      },
+      "id": 4
+    }
+  ],
+  "orderan": [
+    {
+      "name": "halan",
+      "tableNum": "4",
+      "buckets": [
+        {
+          "quantity_order": "1",
+          "description": "grave",
+          "products": {
+            "id": 3,
+            "code": "k-03",
+            "nama": "Nasi rames",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "nasi-rames.jpg"
+          },
+          "id": 1
+        },
+        {
+          "quantity_order": "1",
+          "products": {
+            "id": 1,
+            "code": "k-01",
+            "nama": "Sate Ayam",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "sate-ayam.jpg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "jalan",
+      "tableNum": "7",
+      "buckets": [
+        {
+          "quantity_order": "2",
+          "description": "freak\n",
+          "products": {
+            "id": 10,
+            "code": "k-10",
+            "nama": "Mie goreng",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "mie-goreng.jpg"
+          },
+          "id": 1
+        },
+        {
+          "quantity_order": "6",
+          "description": "das",
+          "products": {
+            "id": 9,
+            "code": "k-09",
+            "nama": "Pangsit",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "pangsit.jpg"
+          },
+          "id": 2
+        },
+        {
+          "quantity_order": "2",
+          "products": {
+            "id": 7,
+            "code": "k-07",
+            "nama": "Kentang goreng",
+            "harga": 10000,
+            "is_ready": true,
+            "gambar": "kentang-goreng.jpg"
+          },
+          "id": 3
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "fakir miskin",
+      "tableNum": "01",
+      "buckets": [
+        {
+          "quantity_order": "1",
+          "description": "gravy",
+          "products": {
+            "id": 1,
+            "code": "k-01",
+            "nama": "Sate Ayam",
+            "harga": 20000,
+            "is_ready": true,
+            "gambar": "sate-ayam.jpg"
+          },
+          "id": 1
+        },
+        {
+          "quantity_order": "2",
+          "products": {
+            "id": 8,
+            "code": "k-08",
+            "nama": "Mie ayam bakso",
+            "harga": 15000,
+            "is_ready": true,
+            "gambar": "mie-ayam-bakso.jpg"
+          },
+          "id": 3
+        },
+        {
+          "quantity_order": "1",
+          "products": {
+            "id": 7,
+            "code": "k-07",
+            "nama": "Kentang goreng",
+            "harga": 10000,
+            "is_ready": true,
+            "gambar": "kentang-goreng.jpg"
+          },
+          "id": 4
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

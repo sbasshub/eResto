@@ -1,4 +1,5 @@
-# eresto
+# eResto
+eResto is `VUE` based web application in which there is a digital menu. The purpose of this web application is to create a restaurant booking system that aims to replace restaurant employees & can be used by direct users. 
 
 ## Project setup
 ```
